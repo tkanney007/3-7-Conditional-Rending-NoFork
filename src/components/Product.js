@@ -2,8 +2,8 @@ import { useState, useContext } from "react";
 import { v4 as uuid } from "uuid";
 
 import styles from "./Product.module.css";
-import Card from "./Card";
 import ViewList from "./ViewList";
+import Card from "./Card";
 
 import ProductContext from "../context/ProductContext";
 import ModeContext from "../context/ModeContext";
@@ -16,7 +16,6 @@ function Product() {
   const [list, setList] = useState([]);
   const [sumTotal, setSumTotal] = useState(0);
   const [isEdit, setIsEdit] = useState(false);
-
   const [table, setTable] = useState(null);
 
   /*
